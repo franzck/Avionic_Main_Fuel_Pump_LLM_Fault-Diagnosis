@@ -1,0 +1,70 @@
+FAULT: fault03_sensorDrop_Engine1 â€” Run 04
+
+--- 05-07s_rpm_ramp ---
+  Flow_Bypass               moderate   (sev= 56.6) [noisy_offset] 32.0% higher, std=27.3%
+  Flow_Bypass               major      (sev= 76.4) [drift] increasing at 43.22%/s (-0.0%→58.4%)
+  Flow_Engine1              major      (sev= 66.9) [noisy_offset] 44.7% lower, std=21.2%
+  Flow_Engine1              major      (sev= 77.8) [drift] decreasing at -32.49%/s (0.0%→-60.5%)
+  Flow_Engine2              minor      (sev= 19.0) [noise] std=3.6% around healthy mean
+  Flow_Engine2              moderate   (sev= 40.7) [drift] decreasing at -3.32%/s (-0.0%→-0.2%)
+  Flow_Engine2              moderate   (sev= 31.3) [transient] peak 9.8% but mean≈2.6%
+  Flow_Engine3              minor      (sev= 19.0) [noise] std=3.6% around healthy mean
+  Flow_Engine3              moderate   (sev= 40.7) [drift] decreasing at -3.32%/s (-0.0%→-0.2%)
+  Flow_Engine3              moderate   (sev= 31.3) [transient] peak 9.8% but mean≈2.6%
+  Flow_Engine4              minor      (sev= 18.7) [noise] std=3.5% around healthy mean
+  Flow_Engine4              moderate   (sev= 40.7) [drift] decreasing at -3.32%/s (-0.0%→-0.2%)
+  Flow_Engine4              moderate   (sev= 31.3) [transient] peak 9.8% but mean≈2.6%
+  Flow_PRV                  minor      (sev= 19.7) [noisy_offset] 3.9% higher, std=5.0%
+  Flow_PRV                  moderate   (sev= 45.1) [drift] decreasing at -4.06%/s (-0.0%→0.2%)
+  Flow_Pump                 moderate   (sev= 42.9) [noisy_offset] 18.4% higher, std=11.9%
+  Flow_Pump                 moderate   (sev= 54.5) [drift] increasing at 19.38%/s (-0.0%→29.7%)
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 5 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 22.1) [offset] 4.9% higher than healthy
+  p_FMU                     minor      (sev= 16.4) [noise] std=2.7% around healthy mean
+  p_FMU                     minor      (sev= 29.7) [drift] decreasing at -1.76%/s (-0.0%→0.6%)
+  p_FMU                     minor      (sev= 29.3) [transient] peak 8.6% but mean≈2.5%
+  p_Pump                    minor      (sev= 23.2) [noisy_offset] 5.4% higher, std=7.2%
+  p_Pump                    moderate   (sev= 49.9) [drift] decreasing at -4.98%/s (0.0%→0.3%)
+  p_Shut                    minor      (sev= 16.4) [noise] std=2.7% around healthy mean
+  p_Shut                    minor      (sev= 29.5) [drift] decreasing at -1.74%/s (-0.0%→0.6%)
+  p_Shut                    minor      (sev= 29.3) [transient] peak 8.6% but mean≈2.5%
+--- 07-10s_rpm_stable ---
+  Flow_Bypass               major      (sev= 76.4) [offset] 58.4% higher than healthy
+  Flow_Engine1              major      (sev= 77.8) [offset] 60.5% lower than healthy
+  Flow_Pump                 moderate   (sev= 54.5) [offset] 29.7% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 6 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 22.1) [offset] 4.9% higher than healthy
+--- 10-15s_throttle_ramp ---
+  Flow_Bypass               major      (sev= 76.2) [offset] 58.1% higher than healthy
+  Flow_Engine1              major      (sev= 88.1) [noisy_offset] 77.6% lower, std=16.5%
+  Flow_Engine1              major      (sev= 62.6) [drift] decreasing at -10.79%/s (-60.5%→-99.7%)
+  Flow_Pump                 moderate   (sev= 54.4) [offset] 29.6% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 17 zero crossings, amplitude ±0.0%
+  Signal_Throttle           negligible (sev=  0.0) [oscillation] 5 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 22.1) [offset] 4.9% higher than healthy
+--- 15-18s_high_plateau ---
+  Flow_Bypass               major      (sev= 75.3) [offset] 56.7% higher than healthy
+  Flow_Engine1              critical   (sev= 99.8) [dropout] signal lost: -99.7% offset from healthy
+  Flow_Pump                 moderate   (sev= 53.9) [offset] 29.1% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 6 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 22.6) [offset] 5.1% higher than healthy
+--- 18-22s_throttle_down ---
+  Flow_Bypass               major      (sev= 76.2) [offset] 58.1% higher than healthy
+  Flow_Engine1              critical   (sev= 92.1) [noisy_offset] 84.9% lower, std=7.9%
+  Flow_Engine1              moderate   (sev= 44.7) [drift] increasing at 6.40%/s (-97.7%→-77.7%)
+  Flow_Pump                 moderate   (sev= 54.4) [offset] 29.6% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 10 zero crossings, amplitude ±0.0%
+  Signal_Throttle           negligible (sev=  0.0) [oscillation] 4 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 22.1) [offset] 4.9% higher than healthy
+--- 22-30s_final_stable ---
+  Flow_Bypass               major      (sev= 76.4) [offset] 58.3% higher than healthy
+  Flow_Engine1              major      (sev= 88.1) [offset] 77.7% lower than healthy
+  Flow_Pump                 moderate   (sev= 54.4) [offset] 29.6% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 16 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 22.1) [offset] 4.9% higher than healthy
+
+Total: 56 findings
+Critical: 2
+Major:    12
+Moderate: 17
+Minor:    17

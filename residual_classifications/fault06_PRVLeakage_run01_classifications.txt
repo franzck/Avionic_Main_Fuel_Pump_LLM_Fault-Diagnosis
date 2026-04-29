@@ -1,0 +1,50 @@
+FAULT: fault06_PRVLeakage â€” Run 01
+
+--- 00-05s_idle ---
+  Flow_PRV                  critical   (sev=100.0) [saturation] signal saturated: +1093.1% above healthy
+--- 05-07s_rpm_ramp ---
+  Flow_PRV                  critical   (sev=100.0) [saturation] signal saturated: +8888.1% above healthy
+  Flow_Pump                 minor      (sev= 18.7) [offset] 3.5% higher than healthy
+  Flow_Pump                 minor      (sev= 21.7) [drift] increasing at 2.51%/s (0.3%→5.0%)
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 5 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 23.7) [offset] 5.6% lower than healthy
+--- 07-10s_rpm_stable ---
+  Flow_PRV                  critical   (sev=100.0) [saturation] signal saturated: +11246.5% above healthy
+  Flow_Pump                 minor      (sev= 22.4) [offset] 5.0% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 6 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 24.5) [offset] 6.0% lower than healthy
+--- 10-15s_throttle_ramp ---
+  Flow_Bypass               minor      (sev= 20.5) [drift] decreasing at -1.08%/s (1.3%→-2.9%)
+  Flow_PRV                  critical   (sev=100.0) [saturation] signal saturated: +11239.4% above healthy
+  Flow_Pump                 minor      (sev= 22.1) [offset] 4.9% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 17 zero crossings, amplitude ±0.0%
+  Signal_Throttle           negligible (sev=  0.0) [oscillation] 5 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 23.5) [offset] 5.5% lower than healthy
+--- 15-18s_high_plateau ---
+  Flow_Bypass               minor      (sev= 18.7) [offset] 3.5% lower than healthy
+  Flow_Engine1              minor      (sev= 18.7) [offset] 3.5% higher than healthy
+  Flow_Engine2              minor      (sev= 18.7) [offset] 3.5% higher than healthy
+  Flow_Engine3              minor      (sev= 18.7) [offset] 3.5% higher than healthy
+  Flow_Engine4              minor      (sev= 18.7) [offset] 3.5% higher than healthy
+  Flow_PRV                  critical   (sev=100.0) [saturation] signal saturated: +11229.9% above healthy
+  Flow_Pump                 minor      (sev= 21.2) [offset] 4.5% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 6 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 21.0) [offset] 4.4% lower than healthy
+  p_FMU                     negligible (sev=  4.5) [oscillation] 7 zero crossings, amplitude ±0.2%
+--- 18-22s_throttle_down ---
+  Flow_PRV                  critical   (sev=100.0) [saturation] signal saturated: +11236.2% above healthy
+  Flow_Pump                 minor      (sev= 22.4) [offset] 5.0% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 10 zero crossings, amplitude ±0.0%
+  Signal_Throttle           negligible (sev=  0.0) [oscillation] 4 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 23.7) [offset] 5.6% lower than healthy
+--- 22-30s_final_stable ---
+  Flow_PRV                  critical   (sev=100.0) [saturation] signal saturated: +11239.2% above healthy
+  Flow_Pump                 minor      (sev= 22.4) [offset] 5.0% higher than healthy
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 16 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 24.3) [offset] 5.9% lower than healthy
+
+Total: 35 findings
+Critical: 7
+Major:    0
+Moderate: 0
+Minor:    19

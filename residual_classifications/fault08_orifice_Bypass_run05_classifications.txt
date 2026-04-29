@@ -1,0 +1,31 @@
+FAULT: fault08_orifice_Bypass â€” Run 05
+
+--- 05-07s_rpm_ramp ---
+  Flow_Bypass               minor      (sev= 13.0) [drift] decreasing at -1.30%/s (0.0%→-1.7%)
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 5 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 18.4) [offset] 3.4% higher than healthy
+  p_Combustion              minor      (sev= 19.5) [drift] increasing at 1.10%/s (0.0%→3.8%)
+  p_Pump                    minor      (sev= 10.5) [oscillation] 3 zero crossings, amplitude ±1.1%
+--- 07-10s_rpm_stable ---
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 6 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 19.5) [offset] 3.8% higher than healthy
+--- 10-15s_throttle_ramp ---
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 17 zero crossings, amplitude ±0.0%
+  Signal_Throttle           negligible (sev=  0.0) [oscillation] 5 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 19.7) [offset] 3.9% higher than healthy
+--- 15-18s_high_plateau ---
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 6 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 20.2) [offset] 4.1% higher than healthy
+--- 18-22s_throttle_down ---
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 10 zero crossings, amplitude ±0.0%
+  Signal_Throttle           negligible (sev=  0.0) [oscillation] 4 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 19.5) [offset] 3.8% higher than healthy
+--- 22-30s_final_stable ---
+  RPM_Motor                 negligible (sev=  0.0) [oscillation] 16 zero crossings, amplitude ±0.0%
+  p_Combustion              minor      (sev= 19.5) [offset] 3.8% higher than healthy
+
+Total: 17 findings
+Critical: 0
+Major:    0
+Moderate: 0
+Minor:    9
